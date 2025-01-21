@@ -30,7 +30,7 @@ public class ReadJsonDocument {
 		.parse(file.readAllBytes());
 		List<Object> property=JsonPath.read(path, "$..type");
 		for (Object properties:property) {
-			System.out.println(properties);
+			System.out.println("API Response attribute - "+properties);
 			
 		}
 	}
